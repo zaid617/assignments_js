@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="before"></h2>
+    <h2 id="initial"></h2>
+    <h2 id="increment"></h2>
+    <h2 id="addition"></h2>
+    <h2 id="decrement"></h2>
+    <h2 id="remainder"></h2>
+
+</body>
+    <script>
+        let value = "";
+        document.querySelector('#before').innerHTML = ("value after declaration is " + before);
+        value = 5;
+        document.querySelector('#initial').innerHTML = (" initial value is " + value);
+        value = ++value;
+        document.querySelector('#increment').innerHTML = ("value after increment is " + value);
+        value = value + 7;
+        document.querySelector('#addition').innerHTML = ("value after addition is " + value);
+        value = --value;
+        document.querySelector('#decrement').innerHTML = ("value after decrement is " + value);
+        value = value/3;
+        document.querySelector('#remainder').innerHTML = ("remainder is " + value);
+
+    </script>
+</html>

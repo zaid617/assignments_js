@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p>..........................</p>
+    <p id="pre_in"></p>
+    <p id="post_in"></p>
+    <p id="pre_dec"></p>
+    <p id="post_dec"></p>
+</body>
+    <script>
+        let value = 10;
+        document.getElementById('result').innerHTML=("the value of a is : " +value);
+        value = ++value;
+        document.getElementById('pre_in').innerHTML=("the value of ++a is : "+value);
+        value = value++;
+        document.getElementById('post_in').innerHTML=("the value of a++ is : "+ value);
+        value = --value;
+        document.getElementById('pre_dec').innerHTML=(+"the value of --a is : "+ value);
+        value = value--;
+        document.getElementById('post_dec').innerHTML=("the value of a-- is : "+ value);
+    </script>
+</html>
