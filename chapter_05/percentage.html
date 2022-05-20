@@ -8,11 +8,17 @@
 </head>
 <body>
     <h1>MARKS SHEET</h1>
-    <p></p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    
     <script>
-        let total = 980;
-        let obtain = 804;
+        let total = prompt("Enter total marks");
+        let obtain = prompt("Enter total marks obtain");
         let percentage =(obtain/total)*100;
+        document.getElementById('p1').innerHTML=(`Total marks is : ${total}`)
+        document.getElementById('p2').innerHTML=(`Total marks obtain is : ${total}`)
+        document.getElementById('p3').innerHTML=(`Percentage is : ${total}%`)
         
     </script>
 </body>

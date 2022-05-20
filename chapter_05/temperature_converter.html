@@ -7,12 +7,17 @@
     <title>temperature converter</title>
 </head>
 <body>
-    <h1 id="celcius"></h1>
-    <h1 id="fahrenheit"></h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
 </body>
     <script>
        let celcius = prompt("Enter temperation in celcius");
        let fahrenheit = (celcius*9/5)+32;
-        document.write(celcius+"C" + " is " + fahrenheit);
+        document.getElementById('p1').innerHTML=(celcius+"C" + " is " + fahrenheit+"F");
+        
+        let fahrenheit1 = prompt("Enter temperation in fahrenhiet");
+        let celcius1 = (fahrenheit-32)*5/9;
+        document.getElementById('p2').innerHTML=(fahrenheit+"F" + " is " + celcius+"C");
+
     </script>
 </html>

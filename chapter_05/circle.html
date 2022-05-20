@@ -9,12 +9,12 @@
 </body>
 <body>
     <h1>the geometrizer</h1>
-    <p></p>
+    <p id="p1"></p>
     <script>
-        let radius = 20;
+        let radius = prompt("Enter the radius of circle");
         let pi = 3.143;
         let cercumference = 2*pi*radius;
-        let area = pi*r;
-        document.querySelectorAll('p').innerText=("radius of circle: "+ radius +"\n"+"the circumference is :" + cercumference +"\n"+"the area is :"+ area);
+        let area = pi*radius;
+        document.getElementById('p1').innerText=("radius of circle: "+ radius +"\n"+"the circumference is :" + cercumference +"\n"+"the area is :"+ area);
     </script>
 </html>

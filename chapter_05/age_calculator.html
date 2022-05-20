@@ -10,10 +10,12 @@
     <h1>Age Calculator</h1>
     <p></p>
     <script>
-        let cyear = 2022;
-        let byear = 2000;
-        let age = 2022 - 2000;
-        document.write("Current year: "+ cyear +"\n"+"Birth year : "+ byear +"\n"+"your age is :"+ age);
+        let cyear = prompt("Enter current year");
+        let byear = prompt("Enter your birth year");
+        let age = cyear - byear;
+        document.write(`Current year:  ${cyear}`);
+        document.write(`Birth year :  ${byear}`);
+        document.write(`your age is : ${age}`);
     </script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+</head>
+<body>
+    <h1>Students Marksheet</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    Subjects
+                </th>
+                <th>
+                    obtain
+                </th>
+                <th>
+                    total
+                </th>
+                <th>
+                    Percentage
+                </th>
+            </tr>
+        </thead>
+        <tr >
+            <th id="sub1"></th>
+            <td id="total"></td>
+            <td id="obtain1"></td>
+            <td id="percent1"></td>
+        </tr>
+        <tr>
+            <th id="sub2"></th>
+            <td id="total2"></td>
+            <td id="obtain2"></td>
+            <td id="percent2"></td>
+        </tr>
+        <tr>
+            <th id="sub3"></th>
+            <td id="total3"></td>
+            <td id="obtain3"></td>
+            <td id="percent3"></td>
+        </tr>
+        <tr>
+            <th id="sub3"></th>
+            <td id="total4"></td>
+            <td id="obtain4"></td>
+            <td id="percent4"></td>
+        </tr>
+    </table>
+    <script>
+        let sub1 = prompt("Enter your first subject name");
+        let sub2 = prompt("Enter your second subject name");
+        let sub3 = prompt("Enter your third subject name");
+        let obtain1 = prompt ("Enter your marks obtain in first subject ")
+        let obtain2 = prompt("Enter your marks obtain in second subject ")
+        let obtain3 = prompt("Enter your marks obtain in third subject ")
+        let total =100;
+        Number(obtain1);
+        Number(obtain2);
+        Number(obtain3);
+        percent1 =  (obtain1/total)*100;
+        percent2 =  (obtain2/total)*100;
+        percent3 =  (obtain3/total)*100;
+
+        total4 = 100*3;
+        obtain4 = obtain1+obtain2+obtain3;
+        percent4 = (obtain4/total4)*100;
+
+        document.getElementById('sub1').innerHTML=sub1;
+        document.getElementById('sub2').innerHTML=sub2;
+        document.getElementById('sub3').innerHTML=sub3;
+        document.getElementById('obtain1').innerHTML=obtain1;
+        document.getElementById('obtain2').innerHTML=obtain2;
+        document.getElementById('obtain3').innerHTML=obtain3;
+        document.getElementById('total').innerHTML=total;
+        document.getElementById('total2').innerHTML=total;
+        document.getElementById('total3').innerHTML=total;
+        document.getElementById('percent1').innerHTML=percent1;
+        document.getElementById('percent2').innerHTML=percent2;
+        document.getElementById('percent3').innerHTML=percent3;
+        
+        document.getElementById('obtain4').innerHTML=obtain4;
+        document.getElementById('total4').innerHTML=total4;
+        document.getElementById('percent4').innerHTML=percent4;
+
+    </script>
+</body>
+</html>
