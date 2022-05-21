@@ -15,10 +15,10 @@
                     Subjects
                 </th>
                 <th>
-                    obtain
+                    total
                 </th>
                 <th>
-                    total
+                    obtain
                 </th>
                 <th>
                     Percentage
@@ -44,7 +44,7 @@
             <td id="percent3"></td>
         </tr>
         <tr>
-            <th id="sub3"></th>
+            <th id="sub4">Total</th>
             <td id="total4"></td>
             <td id="obtain4"></td>
             <td id="percent4"></td>
@@ -54,13 +54,15 @@
         let sub1 = prompt("Enter your first subject name");
         let sub2 = prompt("Enter your second subject name");
         let sub3 = prompt("Enter your third subject name");
-        let obtain1 = prompt ("Enter your marks obtain in first subject ")
-        let obtain2 = prompt("Enter your marks obtain in second subject ")
-        let obtain3 = prompt("Enter your marks obtain in third subject ")
+        let obtain11 = prompt ("Enter your marks obtain in first subject ", "0");
+        let obtain22 = prompt("Enter your marks obtain in second subject ", "0");
+        let obtain33 = prompt("Enter your marks obtain in third subject ", "0");
         let total =100;
-        Number(obtain1);
-        Number(obtain2);
-        Number(obtain3);
+        
+        let obtain1 = Number(obtain11);
+        let obtain2 = Number(obtain22);
+        let obtain3 = Number(obtain33);
+
         percent1 =  (obtain1/total)*100;
         percent2 =  (obtain2/total)*100;
         percent3 =  (obtain3/total)*100;
