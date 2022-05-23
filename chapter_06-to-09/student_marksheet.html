@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>marksheet</title>
+    <style>
+        td{
+            padding: 10px;
+        }
+        th{
+            padding: 10px;
+        }
+        table{
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .even{
+            background-color: #b7d7e8;
+        }
+        .odd{
+            background-color: #cfe0e8;
+        }
+    </style>
 </head>
 <body>
     <h1>Students Marksheet</h1>
     <table border="1">
         <thead>
-            <tr>
+            <tr class="even">
                 <th>
                     Subjects
                 </th>
@@ -25,25 +43,25 @@
                 </th>
             </tr>
         </thead>
-        <tr >
+        <tr class="odd" >
             <th id="sub1"></th>
             <td id="total"></td>
             <td id="obtain1"></td>
             <td id="percent1"></td>
         </tr>
-        <tr>
+        <tr class="even">
             <th id="sub2"></th>
             <td id="total2"></td>
             <td id="obtain2"></td>
             <td id="percent2"></td>
         </tr>
-        <tr>
+        <tr class="odd">
             <th id="sub3"></th>
             <td id="total3"></td>
             <td id="obtain3"></td>
             <td id="percent3"></td>
         </tr>
-        <tr>
+        <tr class="even">
             <th id="sub4">Total</th>
             <td id="total4"></td>
             <td id="obtain4"></td>
@@ -80,13 +98,13 @@
         document.getElementById('total').innerHTML=total;
         document.getElementById('total2').innerHTML=total;
         document.getElementById('total3').innerHTML=total;
-        document.getElementById('percent1').innerHTML=percent1+"%";
-        document.getElementById('percent2').innerHTML=percent2+"%";
-        document.getElementById('percent3').innerHTML=percent3+"%";
+        document.getElementById('percent1').innerHTML=percent1;
+        document.getElementById('percent2').innerHTML=percent2;
+        document.getElementById('percent3').innerHTML=percent3;
         
         document.getElementById('obtain4').innerHTML=obtain4;
         document.getElementById('total4').innerHTML=total4;
-        document.getElementById('percent4').innerHTML=percent4+"%";
+        document.getElementById('percent4').innerHTML=percent4 +"%";
 
     </script>
 </body>
