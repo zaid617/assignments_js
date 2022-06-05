@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let character = prompt("enter a character");
+       res = character.charCodeAt(0);
+       console.log(res);
+       let text;
+       if (res>=48 && res<58) {
+            alert("given character is a number");
+        }
+        
+        else if (res>=65 && res<90) {
+            alert("given character is a capital character");
+        }
+        else if (res>=97 && res<123) {
+            alert("given character is a lower character");
+        }
+        
+        else{
+            alert("given word is a special character");
+        }
+    </script>
+</body>
+</html>

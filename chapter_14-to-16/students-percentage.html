@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li id="item1"></li>
+        <li id="item2"></li>
+        <li id="item3"></li>
+    </ol>
+    <script>
+        let name = ["zaid","ahsan","ali"]
+        let obtain = [450,400,350]
+        
+        let percent1 = (obtain[0]/500)*100;
+        let percent2 = (obtain[1]/500)*100;
+        let percent3 = (obtain[2]/500)*100;
+
+        document.getElementById('item1').innerText = (`Score of ${name[0]} is ${obtain[0]}. Percentage :${percent1}%`)
+        document.getElementById('item2').innerText = (`Score of ${name[1]} is ${obtain[1]}. Percentage :${percent2}%`)
+        document.getElementById('item3').innerText = (`Score of ${name[2]} is ${obtain[2]}. Percentage :${percent3}%`)
+    </script>
+</body>
+</html>

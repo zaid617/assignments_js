@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let color = ["red","green","yellow"];
+        console.log(color)
+        document.write(color)
+        color.unshift(prompt("enter a color you want to add at the begaining"))
+        console.log(color)
+        document.write(color)
+        color.push(prompt("enter a color you want to add at the end"))
+        console.log(color)
+        document.write(color)
+        color.unshift(prompt("enter 2 colors you want to add at the begaining").split(" "))
+        console.log(color)
+        document.write(color)
+        color.shift()
+        console.log(color)
+        document.write(color)
+        color.pop()
+        console.log(color)
+        document.write(color)
+        let col = prompt("which color do you want to add")
+        let pos = prompt("at which position do you want to add color")
+        color.splice(pos,0,col)
+        document.write(color)
+        col = prompt("from which index do you want to delete color")
+        pos = prompt("how many colors do you want to delete")
+        color.splice(pos,col)
+        document.write(color)
+
+
+        
+    </script>
+</body>
+</html>

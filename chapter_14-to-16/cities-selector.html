@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="list">Cities list:</h2>
+    <p id="cites"></p>
+    <h2 id="selected">selected cities list</h2>
+    <p id="city"></p>
+
+    <script>
+        let city =["Karachi","Islamabad","Quetta","Peshawar"]
+        document.getElementById('cites').innerText= city
+        let city1 = city.slice(1, 3)
+        document.getElementById('city').innerText= city1
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let signal = prompt("Please enter the color of traffic light");
+        if (signal="red") {
+            document.querySelector('h1').innerText=("Must stop")
+        }if (signal="green") {
+            document.querySelector('h1').innerText=("Now go")
+        }if (signal="yellow") {
+            document.querySelector('h1').innerText=("Ready to move")
+        }
+        else{
+            document.querySelector('h1').innerText=("Enter a correct color")
+        }
+    </script>
+</body>
+</html>
