@@ -10,11 +10,14 @@
     <h1></h1>
     <script>
         let signal = prompt("Please enter the color of traffic light");
-        if (signal="red") {
+        let red = "red"
+        let green = "green"
+        let yellow ="yellow"
+        if (signal===red) {
             document.querySelector('h1').innerText=("Must stop")
-        }if (signal="green") {
+        }else if (signal===green) {
             document.querySelector('h1').innerText=("Now go")
-        }if (signal="yellow") {
+        }else if (signal===yellow) {
             document.querySelector('h1').innerText=("Ready to move")
         }
         else{

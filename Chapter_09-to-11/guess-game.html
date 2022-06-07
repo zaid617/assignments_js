@@ -9,15 +9,18 @@
 <body>
     <script>
         let guess = prompt("Enter any number from 0 to 9");
-        num = 4;
+        num = "4";
         if (guess<num) {
             alert("your guess was smaller than lucky number, please try again")    
         }
-        if (guess>num) {
+        else if (guess>num) {
             alert("your guess was higher than lucky number, please try again")    
         }
-        if (guess=num) {
+        else if(guess===num) {
             alert("BINGO! your guess was correct")
+        }
+        else{
+            alert("enter valid num")
         }
     </script>
 </body>

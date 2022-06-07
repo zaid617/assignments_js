@@ -10,10 +10,16 @@
     <h1></h1>
     <script>
       let gender =  prompt("Please enter your gender: (male or female");
-        if (gender="male") {
-            document.querySelector('h1').innerText =(" Good Morning Sir")
-        }if (gender="female") {
-            document.querySelector('h1').innerText =(" Good Morning Ma'am")
+      let male = "male";
+      let female = "female";
+      let text=""
+        if (gender=== male ) {
+            text =(" Good Morning Sir")
+        }if (gender=== female) {
+            text =(" Good Morning Ma'am")
+        }
+        if(text){
+            document.querySelector('h1').innerText=text
         }
         else{
             document.querySelector('h1').innerText =(" Enter Valid gender")
